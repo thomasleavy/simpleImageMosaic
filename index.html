@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .image-mosaic {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-auto-rows: 240px;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media screen and (min-width: 600px) {
+        .card-tall {
+          grid-row: span 2 / auto;
+        }
+
+        .card-wide {
+          grid-column: span 2 / auto;
+        }
+      }
+    </style>
+    <title>Simple Image Mosaic</title>
+  </head>
+  <body>
+    <div class="image-mosaic">
+      <a
+        href="https://picsum.photos/id/564/1200/800"
+        target="_blank"
+        class="card card-tall card-wide"
+      >
+        <img src="https://picsum.photos/id/564/1200/800" alt="Image 1" />
+      </a>
+      <a
+        href="https://picsum.photos/id/566/800/530"
+        target="_blank"
+        class="card card-tall"
+      >
+        <img src="https://picsum.photos/id/566/800/530" alt="Image 2" />
+      </a>
+      <a
+        href="https://picsum.photos/id/575/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/575/800/530" alt="Image 3" />
+      </a>
+      <a
+        href="https://picsum.photos/id/626/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/626/800/530" alt="Image 1" />
+      </a>
+      <a
+        href="https://picsum.photos/id/667/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/667/800/530" alt="Image 2" />
+      </a>
+      <a
+        href="https://picsum.photos/id/678/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/678/800/530" alt="Image 3" />
+      </a>
+      <a
+        href="https://picsum.photos/id/695/800/530"
+        target="_blank"
+        class="card card-wide"
+      >
+        <img src="https://picsum.photos/id/695/800/530" alt="Image 4" />
+      </a>
+      <a
+        href="https://picsum.photos/id/683/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/683/800/530" alt="Image 5" />
+      </a>
+      <a
+        href="https://picsum.photos/id/693/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/693/800/530" alt="Image 6" />
+      </a>
+      <a
+        href="https://picsum.photos/id/715/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/715/800/530" alt="Image 7" />
+      </a>
+      <a
+        href="https://picsum.photos/id/610/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/610/800/530" alt="Image 8" />
+      </a>
+      <a
+        href="https://picsum.photos/id/599/800/530"
+        target="_blank"
+        class="card"
+      >
+        <img src="https://picsum.photos/id/599/800/530" alt="Image 9" />
+      </a>
+    </div>
+  </body>
+</html>
